@@ -10,3 +10,5 @@
 | TEABOT_WORKER_CONN | 500 | 
 | TEABOT_HOST | 0.0.0.0 |
 | TEABOT_PORT | 5000 |
+
+### In development
