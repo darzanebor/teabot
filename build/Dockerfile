@@ -1,5 +1,5 @@
 ARG REGISTRY_GROUP_URL
-FROM ${REGISTRY_GROUP_URL}/alphaceti/default-python:0.1.1 as base
+FROM ${REGISTRY_GROUP_URL}/alphaceti/default-python:0.1.5 as base
 ENV PROMETHEUS_MULTIPROC_DIR="/usr/src/app/prometheus" \
     PATH="${PATH}:/home/teabot/.local/bin"
 ADD app /usr/src/app
