@@ -19,7 +19,7 @@ csrf = CSRFProtect()
 app.config["TEABOT_DEFAULT_CHATID"] = str(env.get("TEABOT_DEFAULT_CHATID", ''))
 app.config["TEABOT_TELEGRAM_TOKEN"] = str(env.get("TEABOT_TELEGRAM_TOKEN", ''))
 
-REQUEST_TIME = Summary("teabot_request_processing_seconds", "Time spent processing request")
+REQUEST_TIME = Summary("svc_request_processing_time", "Time spent processing request")
 
 bot = telebot.TeleBot(app.config["TEABOT_TELEGRAM_TOKEN"])
 
